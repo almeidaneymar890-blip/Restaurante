@@ -1,8 +1,8 @@
 import os
 
-from modelos.restaurante import Restaurante
-from modelos.cardapio.bebida import Bebida
-from modelos.cardapio.prato import Prato
+from modelo.restaurante import Restaurante
+from modelo.cardapio.bebida import Bebida
+from modelo.cardapio.prato import Prato
 
 restaurantes = []
 
