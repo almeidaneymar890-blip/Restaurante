@@ -11,6 +11,7 @@ class Restaurante:
         self._categoria = categoria
         self._cardapio = []
         self._avaliacoes = []
+        self.ativo = False
         Restaurante.restaurantes.append(self)
     def __str__(self):
         return f'{self._nome} | {self._categoria}'
@@ -52,3 +53,4 @@ class Restaurante:
                 print(f'{i}. [Prato] {item._nome} - R${item._preco:.2f} | {item.descricao}')
             elif hasattr(item,'tamanho'):
                   print(f'{i}. [Bedida] {item._nome} - R${item._preco:.2f} | {item.tamanho}')
+        
