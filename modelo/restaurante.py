@@ -1,5 +1,5 @@
-from modelos.avaliacao import Avaliacao
-from modelos.cardapio.item_cardapio import ItemCardapio
+from modelo.avaliacao import Avaliacao
+from modelo.cardapio.item_cardapio import ItemCardapio
 
 
 
@@ -52,4 +52,3 @@ class Restaurante:
                 print(f'{i}. [Prato] {item._nome} - R${item._preco:.2f} | {item.descricao}')
             elif hasattr(item,'tamanho'):
                   print(f'{i}. [Bedida] {item._nome} - R${item._preco:.2f} | {item.tamanho}')
-        
